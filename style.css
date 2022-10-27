@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2? family= Justo & family= Sarala:wght@400;700 & display=swap');
+
+* { /* Sigifica que vai pegar essas confihurações em todo o site */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+  /* HEADER */
+
+.cabecalho { /* Mexe no cabecalho como um todo */
+    display: flex; /* Sempre utilizar essa propriedade quando for usar o flexbox */
+    flex-direction: row;  /* Vai deixar o conteúdo do cabecalho na msm linha */
+    align-items: center;  /* Alinha os itens no centro */
+    justify-content: space-around; /* Os itens ficam espassados na area de cabecalho*/
+    padding: 24px; /* Vai dá um espaçamento em todos os lados */
+}   
+
+.cabecalho-imagem { /* mexe na imagem dentro do cabecalho */
+    height: 72px;
+}
+
+.cabecalho-menu { /* Mexe no menu detro do cabecalho */
+    display: flex; /* sempre utilizar essa propriedade quando fizer uso do flexbox */
+    gap: 30px; /* Dá um espaço entre os itens da linha */
+}
+
+.item-menu { /* Mexe nos itens que estão dentro do menu */
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.item-menu:hover {
+    text-decoration: underline;
+    
+}
+
+/* MAIN - Conteudo Principal*/
+
+.conteudo {
+    margin-bottom: 48px; /* Vai da uma distancia da parte de baixo do menu */ 
+    border-top: 0.4px solid white; /* Vai fazer uma linha pra marcar o começo do menu e dividir o menu do cabecalho*/
+}
+
+.conteudo-principal {
+    display: flex;
+    padding: 40px;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.conteudo-escrito-titulo {
+    font-family: 'Righteous', cursive;
+    color: #FFF2E7;
+    font-weight: 600;
+    font-size: 64px;
+}
+
+.conteudo-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    color: #ECD6C4;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.conteudo-principal-botão {
+    font-family: 'Sarala', sans-serif;
+
+    font-weight: 500;
+    font-size: 16px;
+    height: 41px;
+    width: 180px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ECD6C4;
+    box-shadow: 5px 5px 5px black;
+}
+
+.conteudo-principal-botão:hover {
+    background-color: rgba(128, 128, 128, 0.473);
+    color: #ECD6C4;
+}
+
+.conteudo-principal-imagem {
+    height: 430px;
+}
+
+/* MAIN - Conteudo Secundario */
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 22px;
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 40px;
+    font-family: 'Righteous', cursive;
+    color: #FFF2E7;
+    font-weight: 450;
+    font-size: 24px;
+}
+
+.conteudo-secundario-paragrafo {
+    color: #ECD6C4;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* Footer */ 
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid white;
+}
+
+.rodape-imagem {
+    height: 48px;
+    display: block; /* É melhor urilizalá para manipular somente um item */
+    margin: 0 auto; /* Ela vai automaticamente alinhar ao centro */
+}
